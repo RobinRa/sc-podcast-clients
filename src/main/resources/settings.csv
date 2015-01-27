@@ -1,0 +1,35 @@
+# Defines the podcast clients and how they're matched
+#
+#   Col 0, a unique code that labels the client, this need not appear in order,
+#   just be a unique number. This number will remain stable between version.
+#
+#   Col 1, a name that identifies the client, this need not be unique
+#
+#   Col 2 to n, a series of match strings for the client.
+#   These are regexes as defined at:
+#   http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html
+#
+# When a client-agent is matched each row is applied in turn, and so
+# where two clients could possibly be matched the client that appears
+# first here will take precedence.
+#
+1,"AppleCoreMedia iPad","AppleCoreMedia\/[^\()]*\(iPad\p{ASCII}*"
+2,"AppleCoreMedia iPod","AppleCoreMedia\/[^\()]*\(iPod\p{ASCII}*"
+3,"AppleCoreMedia iPhone","AppleCoreMedia\/[^\()]*\(iPhone\p{ASCII}*"
+4,"Beyond Pod","\p{ASCII}*BeyondPod$"
+5,"Blackberry","bPod"
+6,"Castro","Castro\/\p{ASCII}*"
+7,"DoggCatcher","\p{ASCII}*DoggCatcher"
+8,"Downcast","iTunes\/[^D]*Downcast\/\p{ASCII}*"
+9,"iCatcher!","iCatcher!\p{ASCII}*"
+10,"Instacast","Instacast\/\p{ASCII}*","InstacastHD\/\p{ASCII}*"
+11,"iOS Podcasts","Podcasts\/\p{ASCII}*"
+12,"iTunes","iTunes\/\p{ASCII}*","iTunes-i[^\/]+\/\p{ASCII}*","itunesstored\/\p{ASCII}*"
+13,"Mozilla","Mozilla\/?\p{ASCII}*"
+14,"Overcast","Overcast\/\p{ASCII}*"
+15,"Pocket Casts","Pocket Casts"
+16,"PodCruncher","PodCruncher\/\p{ASCII}*"
+17,"Podkicker","Podkicker\/\p{ASCII}*","Podkicker Pro\/\p{ASCII}*"
+18,"Stagefright","\p{ASCII}*stagefright\/\p{ASCII}*"
+19,"Stitcher","Stitcher\/\p{ASCII}*"
+20,"Zune","Zune\/\p{ASCII}*"

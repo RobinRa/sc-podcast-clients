@@ -16,9 +16,9 @@ Issues: please report with GitHub Issues
 This library is published to SoundCloud's internal Maven repository. If you
 have access to this repository add this library as a dependency to your build.
 
-group: com.soundcloud
-artifact: sc-podcast-clients
-version: please see the latest
+    group: com.soundcloud
+    artifact: sc-podcast-clients
+    version: please see the latest
 
 If you don't have access to SoundCloud's internal Maven repository, you will
 need to build the library yourself as described later here.
